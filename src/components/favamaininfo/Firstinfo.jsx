@@ -18,10 +18,12 @@ const Firstinfo = () => {
             به تجارب و دانش سودمندی دست یافته است و اکنــــون می‌تواند دیگر
             سازمان ها را در زمینه‌های تخصصـی مربوطه یاری نماید.
           </p>
-          <button>مزیت های رقابتی</button>
-          <button>گواهی نامه ها </button>
-          <button>ارزش ها</button>
-          <button>چشم انداز و ماموریت</button>
+          <div className={style.wrappbtn}>
+            <button>مزیت های رقابتی</button>
+            <button>گواهی نامه ها </button>
+            <button>ارزش ها</button>
+            <button>چشم انداز و ماموریت</button>
+          </div>
         </div>
         <div className={`${style.halfSection} ${style.second}`}>
           <Image src={pic1} alt="picture" width={766} height={548} />

@@ -1,3 +1,9 @@
+/* add font  */
+@font-face {
+  font-family: BYekan;
+  src: url("../../public/fonts/BYekan.ttf");
+}
+
 /* navbar */
 .navbar {
   width: 1128px;
@@ -10,6 +16,7 @@
   border-radius: 6px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin: 33px auto 0 auto;
+  font-family: "BYekan";
 }
 
 .menu {
