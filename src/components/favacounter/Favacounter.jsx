@@ -7,31 +7,29 @@ import Icon3 from "../../../public/icons/Vector.png";
 
 const Favacounter = () => {
   return (
-    <>
-      <section className={styles.countWrapper}>
-        <div className={styles.countIcon}>
-          <div className={styles.iconBackground}>
-            <Image src={Icon1} alt="icon" width={23} height={26} />
-          </div>
-          <span>520</span>
-          <p>پروژه انجام شده </p>
+    <section className={styles.countWrapper}>
+      <div className={styles.countIcon}>
+        <div className={styles.iconBackground}>
+          <Image src={Icon1} alt="icon" width={23} height={26} />
         </div>
-        <div className={styles.countIcon}>
-          <div className={styles.iconBackground}>
-            <Image src={Icon2} alt="icon" width={23} height={26} />
-          </div>
-          <span>17</span>
-          <p>سال تجربه</p>
+        <span>520</span>
+        <p>پروژه انجام شده </p>
+      </div>
+      <div className={styles.countIcon}>
+        <div className={styles.iconBackground}>
+          <Image src={Icon2} alt="icon" width={23} height={26} />
         </div>
-        <div className={styles.countIcon}>
-          <div className={styles.iconBackground}>
-            <Image src={Icon3} alt="icon" width={23} height={26} />
-          </div>
-          <span>219</span>
-          <p>نیروی متخصص</p>
+        <span>17</span>
+        <p>سال تجربه</p>
+      </div>
+      <div className={styles.countIcon}>
+        <div className={styles.iconBackground}>
+          <Image src={Icon3} alt="icon" width={23} height={26} />
         </div>
-      </section>
-    </>
+        <span>219</span>
+        <p>نیروی متخصص</p>
+      </div>
+    </section>
   );
 };
 

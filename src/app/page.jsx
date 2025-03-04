@@ -1,22 +1,21 @@
 import Navbar from "../components/navbar/Navbar";
 import Firstinfo from "../components/favamaininfo/Firstinfo";
 import Favacounter from "../components/favacounter/Favacounter";
+import styles from "./page.module.css";
 
 export default function home() {
   return (
-    <main>
+    <main className={styles.main}>
       {/* navbar */}
       <Navbar />
 
       {/* home page first info */}
-      <div>
-        <Firstinfo />
-      </div>
+
+      <Firstinfo />
 
       {/* fava counter */}
-      <div>
-        <Favacounter />
-      </div>
+
+      <Favacounter />
     </main>
   );
 }
