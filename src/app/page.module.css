@@ -1,45 +1,9 @@
-/* add font  */
-@font-face {
-  font-family: BYekan;
-  src: url("../../public/fonts/BYekan.ttf");
-}
-
-/* navbar */
-.navbar {
-  width: 1128px;
-  height: 88px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgb(255, 255, 255);
-  padding: 0 20px;
-  border-radius: 6px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  margin: 33px auto 0 auto;
-  font-family: "BYekan";
-}
-
-.menu {
-  display: flex;
-  gap: 40px;
-}
-
-.menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-}
-
-.button {
-  background: #ff6f00;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.logo > img {
-  width: 100px;
-  height: auto;
+/* background image for the whole page */
+main {
+  background-image: url("../../public/images/bgc.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
 }

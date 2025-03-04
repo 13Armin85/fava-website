@@ -1,3 +1,8 @@
+/* add font  */
+@font-face {
+  font-family: BYekan;
+  src: url("../../../public/fonts/BYekan.ttf");
+}
 .newSection {
   display: flex;
   justify-content: space-between;
