@@ -14,37 +14,37 @@ const Services = () => {
   return (
     <section class={style.Services}>
       <h2 className={style.h2}>خدمات</h2>
-      <div class={style.wrappservices}>
-        <div class={style.boxservices}>
+      <div className={style.wrappservices}>
+        <div className={style.boxservices}>
           <Image src={Icon8} alt="" />
           شبکه و زیر ساخت
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon3} alt="" />
           امنیت اطلاعات
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon2} alt="" />
           سیستم های اطلاعاتی
         </div>
-        <div class={style.activeboxservices}>
+        <div className={style.activeboxservices}>
           <Image src={Icon1} alt="" />
           سیستم های یکپارچه
           <div className={style.orangebar}></div>
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon4} alt="" />
           هوشمند سازی
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon5} alt="" />
           تامین تجهیزات
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon6} alt="" />
           تحول دیجیتال
         </div>
-        <div class={style.boxservices}>
+        <div className={style.boxservices}>
           <Image src={Icon7} alt="" />
           مرکز داده و امداد و پشتیبانی
         </div>

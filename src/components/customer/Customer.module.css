@@ -1,0 +1,87 @@
+.clientsec {
+  font-family: "Byekan";
+  text-align: center;
+  padding: 50px 20px;
+  position: relative;
+}
+
+.clientsec > h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 120px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.logo > img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+.item > p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.arrows {
+  position: absolute;
+  left: 50%;
+  bottom: 130px;
+  width: 950px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.arrows img:first-child {
+  position: relative;
+  left: -20px;
+  cursor: pointer;
+  width: 30px;
+  height: auto;
+}
+
+/* فلش راست */
+.arrows img:last-child {
+  position: relative;
+  right: -20px;
+  cursor: pointer;
+  width: 30px;
+  height: auto;
+}
