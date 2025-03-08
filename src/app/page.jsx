@@ -17,6 +17,7 @@ export default function home() {
       {/* fava counter */}
 
       <Favacounter />
+
       {/* services */}
       <Services />
     </main>

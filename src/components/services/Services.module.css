@@ -1,1 +1,104 @@
+/* add font  */
+@font-face {
+  font-family: BYekan;
+  src: url("../../../public/fonts/BYekan.ttf");
+}
+/* services code */
+.services {
+  max-width: 1000px;
+  margin: 50px auto;
+}
 
+.h2 {
+  font-size: 24px;
+  color: #515151;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "BYekan";
+}
+
+.wrappservices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 30px 100px;
+}
+
+.boxservices {
+  font-family: "BYekan";
+  background-color: #9abef133;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  height: 100px;
+  position: relative;
+}
+
+.boxservices::before {
+  content: url("../../../public/icons/arrow-square-left.svg");
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  top: 60%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+
+.boxservices:hover,
+.boxservices.active {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.activeboxservices {
+  background-color: #9abef133;
+  font-family: "BYekan";
+  align-items: flex-end;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.activeboxservices::before {
+  content: url("../../../public/icons/arrow-square-left.svg");
+  display: inline-block;
+  margin-right: 10px;
+  position: absolute;
+  top: 60%;
+  left: 30px;
+  transform: translateY(-50%);
+}
+.activeboxservices:hover {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.orangebar {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 5px;
+  background: #ff7f50;
+  border-radius: 10px;
+}
+
+.boxservices > img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 8px;
+  filter: invert(9%) sepia(100%) saturate(3000%) hue-rotate(240deg)
+    brightness(30%) contrast(500%);
+}
+.activeboxservices > img {
+  filter: invert(9%) sepia(100%) saturate(3000%) hue-rotate(240deg)
+    brightness(30%) contrast(500%);
+}
