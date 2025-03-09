@@ -1,55 +1,38 @@
 .container {
+  position: relative;
   width: 100%;
   padding: 10px;
   border-radius: 10px;
-  display: flex; /* اضافه کردن flexbox */
-  justify-content: center; /* قرار دادن المنت در وسط به صورت افقی */
-  align-items: center; /* قرار دادن المنت در وسط به صورت عمودی */
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 
 .element {
   width: 1065px;
   height: 455px;
-  border-radius: 10px;
-  background: #f0f0f0;
+  border-radius: 4px;
+  background: #dfdfdf;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.control {
+.contorol {
+  width: 978px;
+  height: 57px;
+  position: absolute;
+  bottom: 50px;
+  left: 280px;
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
-  z-index: 1;
+  background-color: #edf2f8cf;
+  border-radius: 8px;
+  gap: 30px;
 }
-
-.button {
-  background: navy;
-  color: white;
-  border: none;
-  padding: 8px 12px;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 16px;
+.maximize {
+  margin-left: 20px;
 }
-
-.progress {
-  flex-grow: 1;
-  height: 5px;
-  background: #ccc;
-  position: relative;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.bar {
-  height: 100%;
-  background: orange;
-  position: absolute;
-  border-radius: 5px;
-}
-
-.time {
-  font-size: 14px;
-  color: #333;
+.pause {
+  margin-left: 20px;
 }
