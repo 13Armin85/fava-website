@@ -1,15 +1,55 @@
 .wrapper {
-  margin: 0;
-  padding: 0;
+  margin: 60px 0 0 15%;
+  padding: 0 50px;
   box-sizing: border-box;
   background-image: url("../../../public/images/Layer_1 1.svg");
-  width: 1128px;
-  height: 548px;
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "BYekan";
 }
+
 .header {
   text-align: center;
   color: #848484;
-  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 34px;
 }
-.firstpart {
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.firstpart,
+.secondpart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn1 {
+  background-color: #ffffff;
+  border: none;
+  margin-top: 25px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #515151;
+}
+.btn2 {
+  background-color: #ff6f00;
+  border: none;
+  margin-top: 25px;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn1,
+.btn2 {
+  font-family: "BYekan";
 }
