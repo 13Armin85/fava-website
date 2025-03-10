@@ -4,6 +4,8 @@ import Favacounter from "../components/favacounter/Favacounter";
 import Services from "../components/services/Services";
 import Customer from "../components/customer/Customer";
 import Videoplayer from "../components/Videoplayer/Videoplayer";
+import Slider from "../components/slider/Slider";
+import Platform from "../components/platforms/Platform";
 import styles from "./page.module.css";
 
 export default function home() {
@@ -28,6 +30,12 @@ export default function home() {
 
       {/* video player */}
       <Videoplayer />
+
+      {/* Slider */}
+      <Slider />
+
+      {/* platform section */}
+      <Platform />
     </main>
   );
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "./Favacounter.module.css";
 import Icon1 from "../../../public/icons/Group 9.png";
 import Icon2 from "../../../public/icons/Vector (1).png";
-import Icon3 from "../../../public/icons/Vector.png";
+import Icon3 from "../../../public/icons/Group 9.png";
 
 const Favacounter = () => {
   return (

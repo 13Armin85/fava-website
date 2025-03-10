@@ -28,10 +28,8 @@
   margin-top: 10px;
   background-color: #edf2f8cf;
   border-radius: 8px;
-  gap: 30px;
-}
-.maximize {
-  margin-left: 20px;
+  gap: 35px;
+  cursor: pointer;
 }
 .pause {
   margin-left: 20px;
