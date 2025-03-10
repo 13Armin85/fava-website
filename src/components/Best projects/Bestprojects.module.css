@@ -1,0 +1,64 @@
+.projectsection {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 50px 0;
+  margin: 0;
+  padding: 0;
+  font-family: "BYekan";
+  background-color: #ffffff;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #333;
+  margin-top: 50px;
+}
+
+.projectcontainer {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-left: 10%;
+}
+
+/* بخش تصویر */
+.projectimage {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+}
+
+.projectimage > img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.projectinfo {
+  width: 500px;
+  height: auto;
+  flex: 1 1 50%;
+  color: #555;
+  line-height: 1.6;
+}
+
+.text1 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+.text2 {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.text1,
+.text2 {
+  text-align: justify;
+  direction: rtl;
+  margin-right: 70px;
+}

@@ -6,6 +6,8 @@ import Customer from "../components/customer/Customer";
 import Videoplayer from "../components/Videoplayer/Videoplayer";
 import Slider from "../components/slider/Slider";
 import Platform from "../components/platforms/Platform";
+import Bestprojects from "@/components/Best projects/Bestprojects";
+import Companies from "@/components/companies/Companies";
 import styles from "./page.module.css";
 
 export default function home() {
@@ -36,6 +38,12 @@ export default function home() {
 
       {/* platform section */}
       <Platform />
+
+      {/* best project section */}
+      <Bestprojects />
+
+      {/* companies */}
+      <Companies />
     </main>
   );
 }
