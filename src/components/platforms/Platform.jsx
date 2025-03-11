@@ -10,11 +10,11 @@ const Platform = () => {
       <h2 className={style.header}>پلتفرم ها</h2>
       <div className={style.content}>
         <div className={style.firstpart}>
-          <Image src={pic2} />
+          <Image width={418} height={228} alt="pic" src={pic2} />
           <button className={style.btn1}>پلتفرم هوشمند خودروی اشتراکی</button>
         </div>
         <div className={style.secondpart}>
-          <Image src={pic1} />
+          <Image width={418} height={228} alt="pic" src={pic1} />
           <button className={style.btn2}>پلتفرم متمرکز وب سرویس (API)</button>
         </div>
       </div>

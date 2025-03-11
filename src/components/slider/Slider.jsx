@@ -19,43 +19,49 @@ import Image7 from "../../../public/images/Group 48095543.png";
 
 const Slider = () => {
   return (
-    <section className={style.first}>
+    <section>
       <h1 className={style.header}>محصولات</h1>
-      <div className={style.wrapper}>
-        <div className={`custom-swiper-button-prev ${style.navButton1}`}>‹</div>
+      <div className={style.first}>
+        <div className={style.wrapper}>
+          <div className={`custom-swiper-button-prev ${style.navButton1}`}>
+            ‹
+          </div>
 
-        <Swiper
-          effect="coverflow"
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={3}
-          spaceBetween={-260}
-          loop={true}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 100,
-            modifier: 1,
-            slideShadows: false,
-          }}
-          navigation={{
-            nextEl: ".custom-swiper-button-next",
-            prevEl: ".custom-swiper-button-prev",
-          }}
-          modules={[EffectCoverflow, Navigation]}
-          className={style.swiper}
-        >
-          {[Image1, Image2, Image3, Image4, Image5, Image6, Image7].map(
-            (img, index) => (
-              <SwiperSlide key={index} className="swiper-slide">
-                <div className={style.slideWrapper}>
-                  <Image src={img} alt={`Slide ${index + 1}`} />
-                </div>
-              </SwiperSlide>
-            )
-          )}
-        </Swiper>
-        <div className={`custom-swiper-button-next ${style.navButton2}`}>›</div>
+          <Swiper
+            effect="coverflow"
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={3}
+            spaceBetween={-500}
+            loop={true}
+            coverflowEffect={{
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            }}
+            navigation={{
+              nextEl: ".custom-swiper-button-next",
+              prevEl: ".custom-swiper-button-prev",
+            }}
+            modules={[EffectCoverflow, Navigation]}
+            className={style.swiper}
+          >
+            {[Image1, Image2, Image3, Image4, Image5, Image6, Image7].map(
+              (img, index) => (
+                <SwiperSlide key={index} className={style.swiperslide}>
+                  <div className={style.slideWrapper}>
+                    <Image src={img} alt={`Slide ${index + 1}`} />
+                  </div>
+                </SwiperSlide>
+              )
+            )}
+          </Swiper>
+          <div className={`custom-swiper-button-next ${style.navButton2}`}>
+            ›
+          </div>
+        </div>
       </div>
     </section>
   );

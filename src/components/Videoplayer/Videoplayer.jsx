@@ -35,22 +35,22 @@ const CustomVideoPlayer = () => {
 
       <div className={style.contorol}>
         <div className={style.pause}>
-          <Image src={icon1} />
+          <Image width={24} height={24} alt="pic" src={icon1} />
         </div>
         <div className={style.bar}>
-          <Image src={icon2} />
+          <Image width={640} height={37} alt="pic" src={icon2} />
         </div>
         <div className={style.next}>
-          <Image src={icon3} />
+          <Image width={24} height={24} alt="pic" src={icon3} />
         </div>
         <div className={style.volume}>
-          <Image src={icon4} />
+          <Image width={24} height={24} alt="pic" src={icon4} />
         </div>
         <div className={style.setting}>
-          <Image src={icon5} />
+          <Image width={24} height={24} alt="pic" src={icon5} />
         </div>
-        <div className={style.maximize}>
-          <Image src={icon6} />
+        <div width={24} className={style.maximize}>
+          <Image width={24} height={24} alt="pic" src={icon6} />
         </div>
       </div>
     </section>

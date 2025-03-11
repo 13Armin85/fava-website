@@ -18,50 +18,50 @@ const Customer = () => {
       <div className={style.slider}>
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon1} alt="جتکو" />
+            <Image width={120} height={120} src={icon1} alt="جتکو" />
           </div>
           <p>جتکو</p>
         </div>
 
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon2} alt="ساپکو" />
+            <Image width={120} height={120} src={icon2} alt="ساپکو" />
           </div>
           <p>ساپکو</p>
         </div>
 
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon3} alt="ایکاپ" />
+            <Image width={120} height={120} src={icon3} alt="ایکاپ" />
           </div>
           <p>ایکاپ</p>
         </div>
 
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon4} alt="ساوه و ساختمان" />
+            <Image width={120} height={120} src={icon4} alt="ساوه و ساختمان" />
           </div>
           <p>ساوه و ساختمان</p>
         </div>
 
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon5} alt="ایران خودرو" />
+            <Image width={120} height={120} src={icon5} alt="ایران خودرو" />
           </div>
           <p>ایران خودرو</p>
         </div>
 
         <div className={style.item}>
           <div className={style.logo}>
-            <Image src={icon6} alt="تام" />
+            <Image width={120} height={120} src={icon6} alt="تام" />
           </div>
           <p>تام</p>
         </div>
       </div>
 
       <div className={style.arrows}>
-        <Image src={left} />
-        <Image src={right} />
+        <Image width={120} height={120} alt="pic" src={left} />
+        <Image width={120} height={120} alt="pic" src={right} />
       </div>
     </section>
   );

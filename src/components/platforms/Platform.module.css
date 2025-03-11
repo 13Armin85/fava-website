@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 60px 0 0 15%;
+  margin: 60px 0 0 12%;
   padding: 0 50px;
   box-sizing: border-box;
   background-image: url("../../../public/images/Layer_1 1.svg");
@@ -22,7 +22,7 @@
 .content {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  width: auto;
 }
 
 .firstpart,

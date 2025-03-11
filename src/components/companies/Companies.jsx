@@ -14,22 +14,22 @@ const Companies = () => {
       <h2 className={style.header}>شرکای تجاری</h2>
       <div className={style.logos}>
         <div className={style.items}>
-          <Image src={logo1} alt="لوگو 1" />
+          <Image width={100} height={100} src={logo1} alt="لوگو 1" />
         </div>
         <div className={style.items}>
-          <Image src={logo2} alt="لوگو 2" />
+          <Image width={100} height={100} src={logo2} alt="لوگو 2" />
         </div>
         <div className={style.items}>
-          <Image src={logo3} alt="لوگو 3" />
+          <Image width={100} height={100} src={logo3} alt="لوگو 3" />
         </div>
         <div className={style.items}>
-          <Image src={logo4} alt="لوگو 4" />
+          <Image width={100} height={100} src={logo4} alt="لوگو 4" />
         </div>
         <div className={style.items}>
-          <Image src={logo5} alt="لوگو 5" />
+          <Image width={100} height={100} src={logo5} alt="لوگو 5" />
         </div>
         <div className={style.items}>
-          <Image src={logo6} alt="لوگو 6" />
+          <Image width={100} height={100} src={logo6} alt="لوگو 6" />
         </div>
       </div>
     </section>

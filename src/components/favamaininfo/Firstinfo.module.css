@@ -25,6 +25,7 @@
   width: 100%;
   height: 100%;
   margin-left: 20px;
+  direction: rtl;
 }
 .halfSection.first > h1 {
   text-align: right;
