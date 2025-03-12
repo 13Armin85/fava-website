@@ -10,6 +10,7 @@
   align-items: center;
   justify-content: center;
   font-family: "BYekan";
+  border-radius: 4px;
 }
 
 .header {
@@ -23,6 +24,7 @@
   display: flex;
   justify-content: space-between;
   width: auto;
+  margin-bottom: 35px;
 }
 
 .firstpart,

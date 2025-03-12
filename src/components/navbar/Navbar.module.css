@@ -27,6 +27,9 @@
   color: #333;
   font-weight: bold;
 }
+.menu > .active {
+  color: #1b3375;
+}
 
 .button {
   background: #ff6f00;

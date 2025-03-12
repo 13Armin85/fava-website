@@ -11,12 +11,15 @@ const Navbar = () => {
           همکاری با ما
         </a>
         <div className={style.menu}>
-          <a href="#">درباره ایران فاوا</a>
-          <a href="#">خدمات</a>
-          <a href="#">محصولات</a>
-          <a href="#">مناقصات</a>
-          <a href="#">اخبار و رویدادها</a>
           <a href="#">تماس با ما</a>
+          <a href="#">اخبار و رویدادها</a>
+          <a href="#">مناقصات</a>
+          <a href="#">آکادمی</a>
+          <a href="#">محصولات</a>
+          <a href="#">خدمات</a>
+          <a className={style.active} href="#">
+            درباره ایران فاوا
+          </a>
         </div>
         <div className={style.logo}>
           <Image src={logo} alt="لوگو" width={100} height={100} />
