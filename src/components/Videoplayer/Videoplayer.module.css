@@ -1,37 +1,103 @@
 .container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 10px;
-  border-radius: 10px;
-  display: grid;
+  max-width: 1056px;
+  margin: auto;
+  background: #bbb8b8;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative; /* برای کنترل صحیح موقعیت */
+}
+
+.videoWrapper {
+  position: relative; /* برای کنترل موقعیت ویدیو و کنترل‌ها */
+  width: 100%;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.element {
-  width: 1065px;
-  height: 455px;
-  border-radius: 4px;
-  background: #dfdfdf;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.video {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.contorol {
-  width: 978px;
-  height: 57px;
+.controls {
   position: absolute;
-  bottom: 10%;
+  bottom: 10px; /* نزدیک‌تر به پایین ویدیو */
   left: 50%;
   transform: translateX(-50%);
+  width: 90%;
+  background-color: #edf2f8; /* پس‌زمینه نیمه‌شفاف برای ظاهر مدرن */
+  padding: 10px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  margin-top: 10px;
-  background-color: #edf2f8cf;
-  border-radius: 8px;
-  gap: 35px;
+  justify-content: space-between;
+  opacity: 1; /* پنهان به‌صورت پیش‌فرض */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.controlBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlBtn img {
+  width: 24px;
+  height: 24px;
+}
+
+.progressBar {
+  width: 50%;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #a1a1a154;
+  border-radius: 5px;
+  outline: none;
   cursor: pointer;
 }
-.pause {
-  margin-left: 20px;
+
+.progressBar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 12px;
+  height: 12px;
+  background: orange;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.volumeControl {
+  width: 80px;
+  height: 5px;
+  -webkit-appearance: none;
+  background: #ccc;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.volumeControl::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: navy;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.time {
+  font-size: 14px;
+  color: navy;
+  font-weight: bold;
+  margin: 0 10px;
 }

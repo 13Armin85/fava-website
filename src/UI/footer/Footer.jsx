@@ -2,6 +2,11 @@ import React from "react";
 import style from "./Footer.module.css";
 import Img from "../../../public/icons/sms-tracking.png";
 import Image from "next/image";
+import Img1 from "../../../public/icons/location.png";
+import Img2 from "../../../public/icons/call.png";
+import Img3 from "../../../public/icons/call2.png";
+import Img4 from "../../../public/icons/global.png";
+
 const Footer = () => {
   return (
     <footer className={style.footer}>
@@ -15,17 +20,31 @@ const Footer = () => {
         </div>
 
         <div className={style.contacts}>
-          <p className={style.text}>
-            <strong>آدرس:</strong> تهران - توحید آباد - میدان گلشری
-          </p>
-          <p className={style.text}>خیابان ابن سینا - کوچه یاسمن - پلاک 18</p>
-          <p className={style.text}>شماره تماس: 021-42596000</p>
-          <p className={style.text}>
-            <strong>شماره فکس:</strong> 021-88616308
-          </p>
-          <p className={style.text}>
-            <strong>ایمیل:</strong> info@iranfava.com
-          </p>
+          <div className={style.textwrapper}>
+            <p className={style.text}>
+              <strong>آدرس:</strong> تهران - توحید آباد - میدان گلشری
+              <p className={style.text}>
+                خیابان ابن سینا - کوچه یاسمن - پلاک 18
+              </p>
+            </p>
+            <Image src={Img1} width={18} height={18} />
+          </div>
+          <div className={style.textwrapper}>
+            <p className={style.text}>شماره تماس: 021-42596000</p>
+            <Image src={Img2} width={18} height={18} />
+          </div>
+          <div className={style.textwrapper}>
+            <p className={style.text}>
+              <strong>شماره فکس:</strong> 021-88616308
+            </p>
+            <Image src={Img3} width={18} height={18} />
+          </div>
+          <div className={style.textwrapper}>
+            <p className={style.text}>
+              <strong>ایمیل:</strong> info@iranfava.com
+            </p>
+            <Image src={Img4} width={18} height={18} />
+          </div>
         </div>
 
         <div className={style.links}>

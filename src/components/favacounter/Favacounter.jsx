@@ -14,6 +14,7 @@ const Favacounter = () => {
         </div>
         <span>520</span>
         <p>پروژه انجام شده </p>
+        <div className={styles.verticalLine}></div>
       </div>
       <div className={styles.countIcon}>
         <div className={styles.iconBackground}>
@@ -21,6 +22,7 @@ const Favacounter = () => {
         </div>
         <span>17</span>
         <p>سال تجربه</p>
+        <div className={styles.verticalLine}></div>
       </div>
       <div className={styles.countIcon}>
         <div className={styles.iconBackground}>
