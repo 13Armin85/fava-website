@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0eaf7d5;
+}
+
+.header {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  width: 80%;
+  gap: 43%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.h1 {
+  font-size: 48px;
+  margin-right: 86px;
+  color: #848484;
+  white-space: nowrap;
+  font-family: "BYekan";
+}
+
+.pic {
+  width: 270px;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
