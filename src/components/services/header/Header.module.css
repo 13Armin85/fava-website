@@ -1,16 +1,20 @@
 .container {
   display: flex;
-  justify-content: center;
   align-items: center;
   background-color: #e0eaf7d5;
+  box-sizing: border-box;
+  margin-top: 0;
+  padding-top: 150px;
 }
 
 .header {
   display: flex;
   flex-direction: row-reverse;
+  justify-content: space-between;
   align-items: center;
-  width: 80%;
-  gap: 43%;
+  text-align: center;
+  margin-left: 10%;
+  width: 100%;
   max-width: 1200px;
   padding: 20px;
 }
@@ -29,4 +33,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.address {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 85px;
+  margin-top: 35px;
+  gap: 15px;
+}
+.p {
+  font-size: 12px;
+  cursor: pointer;
+  color: #848484;
+  margin-top: 12px;
+}
+.address > img {
+  margin-top: 15px;
 }

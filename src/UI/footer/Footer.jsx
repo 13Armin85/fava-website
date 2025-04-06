@@ -21,29 +21,29 @@ const Footer = () => {
 
         <div className={style.contacts}>
           <div className={style.textwrapper}>
-            <p className={style.text}>
+            <section className={style.text}>
               <strong>آدرس:</strong> تهران - توحید آباد - میدان گلشری
               <p className={style.text}>
                 خیابان ابن سینا - کوچه یاسمن - پلاک 18
               </p>
-            </p>
-            <Image src={Img1} width={18} height={18} />
+            </section>
+            <Image src={Img1} width={18} height={18} alt="icon" />
           </div>
           <div className={style.textwrapper}>
             <p className={style.text}>شماره تماس: 021-42596000</p>
-            <Image src={Img2} width={18} height={18} />
+            <Image src={Img2} width={18} height={18} alt="icon" />
           </div>
           <div className={style.textwrapper}>
             <p className={style.text}>
               <strong>شماره فکس:</strong> 021-88616308
             </p>
-            <Image src={Img3} width={18} height={18} />
+            <Image src={Img3} width={18} height={18} alt="icon" />
           </div>
           <div className={style.textwrapper}>
             <p className={style.text}>
               <strong>ایمیل:</strong> info@iranfava.com
             </p>
-            <Image src={Img4} width={18} height={18} />
+            <Image src={Img4} width={18} height={18} alt="icon" />
           </div>
         </div>
 

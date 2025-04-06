@@ -5,6 +5,8 @@
 }
 /* services code */
 .services {
+  width: 1090px;
+  height: 364px;
   max-width: 1000px;
   margin: 50px auto;
 }
@@ -22,7 +24,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
-  margin: 30px 100px;
+  width: 100%;
 }
 
 .boxservices {
@@ -37,8 +39,9 @@
   align-items: end;
   justify-content: center;
   flex-direction: column;
-  height: 100px;
+  height: 123px;
   position: relative;
+  width: 259px;
 }
 
 .boxservices::before {

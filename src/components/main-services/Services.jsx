@@ -16,36 +16,36 @@ const Services = () => {
       <h2 className={style.h2}>خدمات</h2>
       <div className={style.wrappservices}>
         <div className={style.boxservices}>
-          <Image src={Icon8} alt="" />
+          <Image src={Icon8} alt="icon" />
           شبکه و زیر ساخت
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon3} alt="" />
+          <Image src={Icon3} alt="icon" />
           امنیت اطلاعات
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon2} alt="" />
+          <Image src={Icon2} alt="icon" />
           سیستم های اطلاعاتی
         </div>
         <div className={style.activeboxservices}>
-          <Image src={Icon1} alt="" />
+          <Image src={Icon1} alt="icon" />
           سیستم های یکپارچه
           <div className={style.orangebar}></div>
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon4} alt="" />
+          <Image src={Icon4} alt="icon" />
           هوشمند سازی
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon5} alt="" />
+          <Image src={Icon5} alt="icon" />
           تامین تجهیزات
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon6} alt="" />
+          <Image src={Icon6} alt="icon" />
           تحول دیجیتال
         </div>
         <div className={style.boxservices}>
-          <Image src={Icon7} alt="" />
+          <Image src={Icon7} alt="icon" />
           مرکز داده و امداد و پشتیبانی
         </div>
       </div>

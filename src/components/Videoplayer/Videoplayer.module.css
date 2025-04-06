@@ -9,11 +9,12 @@
   background: #bbb8b8;
   border-radius: 8px;
   overflow: hidden;
-  position: relative; /* برای کنترل صحیح موقعیت */
+  position: relative;
+  margin-top: 68px;
 }
 
 .videoWrapper {
-  position: relative; /* برای کنترل موقعیت ویدیو و کنترل‌ها */
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -28,17 +29,17 @@
 
 .controls {
   position: absolute;
-  bottom: 10px; /* نزدیک‌تر به پایین ویدیو */
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  background-color: #edf2f8; /* پس‌زمینه نیمه‌شفاف برای ظاهر مدرن */
+  background-color: #edf2f8;
   padding: 10px;
   border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  opacity: 1; /* پنهان به‌صورت پیش‌فرض */
+  opacity: 1;
   transition: opacity 0.3s ease-in-out;
 }
 

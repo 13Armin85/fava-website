@@ -1,9 +1,10 @@
 /* add font  */
-@font-face {
-  font-family: BYekan;
-  src: url("../../../public/fonts/BYekan.ttf");
-}
+
 .navbar {
+  position: fixed;
+  top: 53px;
+  right: 50%;
+  transform: translateX(50%);
   width: 1128px;
   height: 88px;
   display: flex;
@@ -13,8 +14,8 @@
   padding: 0 20px;
   border-radius: 6px;
   box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1);
-  margin: 33px auto 0 auto;
-  font-family: "BYekan";
+  z-index: 10;
+  /* margin: 33px auto 0 auto; */
 }
 
 .menu {
@@ -38,6 +39,9 @@
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
+}
+.button:hover {
+  background-color: #ee7b24;
 }
 
 .logo > img {

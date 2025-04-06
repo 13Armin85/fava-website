@@ -27,6 +27,7 @@
   width: 40px;
   height: auto;
   align-self: flex-end;
+  margin-right: 7px;
 }
 
 .sendmail {
@@ -54,6 +55,9 @@
   cursor: pointer;
   border-radius: 3px;
   font-family: "BYekan";
+}
+.sendmail > button:hover {
+  background-color: #e2801d;
 }
 
 .contact,
@@ -101,6 +105,7 @@
   align-items: center;
   text-align: right;
   justify-content: flex-end;
+  margin-bottom: 15px;
 }
 
 .textwrapper p {
