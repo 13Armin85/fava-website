@@ -33,7 +33,7 @@ const slides = [
 
 export default function Slider() {
   return (
-    <div>
+    <div id="products">
       <h1 className={styles.h1}>محصولات</h1>
       <div className={styles.wrapper}>
         <Swiper

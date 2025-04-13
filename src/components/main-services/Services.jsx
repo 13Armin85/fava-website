@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import Icon1 from "../../../public/icons/refresh-2.png";
 import Icon2 from "../../../public/icons/monitor.png";
 import Icon3 from "../../../public/icons/lock.png";
@@ -12,7 +13,7 @@ import arrow from "../../../public/icons/arrow-square-left.svg";
 import style from "./Services.module.css";
 const Services = () => {
   return (
-    <section class={style.Services}>
+    <section class={style.Services} id="services">
       <h2 className={style.h2}>خدمات</h2>
       <div className={style.wrappservices}>
         <div className={style.boxservices}>
@@ -27,11 +28,14 @@ const Services = () => {
           <Image src={Icon2} alt="icon" />
           سیستم های اطلاعاتی
         </div>
-        <div className={style.activeboxservices}>
+        <Link
+          href="/services-integrated-system"
+          className={style.activeboxservices}
+        >
           <Image src={Icon1} alt="icon" />
           سیستم های یکپارچه
           <div className={style.orangebar}></div>
-        </div>
+        </Link>
         <div className={style.boxservices}>
           <Image src={Icon4} alt="icon" />
           هوشمند سازی

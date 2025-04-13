@@ -1,13 +1,14 @@
 .first {
   background-image: url("../../../../public/images/bgc.svg");
+  width: 100%;
 }
 .accordion-container {
   width: 780px;
   height: 400spx;
   overflow-y: auto;
   margin: 0 auto;
+  margin-top: 60px;
   border: none;
-
   border-radius: 4px;
 }
 .accordion-button {

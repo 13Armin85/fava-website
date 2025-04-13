@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Firstinfo = () => {
   return (
-    <section className={style.newSection}>
+    <section className={style.newSection} id="about">
       <div className={`${style.halfSection} ${style.first}`}>
         <h1>شرکت ایران فاوا گسترش</h1>
         <p>
