@@ -41,7 +41,7 @@ export default function Slider() {
           navigation
           centeredSlides
           slidesPerView={1.5}
-          spaceBetween={30}
+          spaceBetween={-10}
           loop={true}
           effect="coverflow"
           coverflowEffect={{

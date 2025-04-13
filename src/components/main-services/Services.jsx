@@ -18,39 +18,40 @@ const Services = () => {
       <div className={style.wrappservices}>
         <div className={style.boxservices}>
           <Image src={Icon8} alt="icon" />
-          شبکه و زیر ساخت
+          <p className={style.p}>شبکه و زیر ساخت</p>
+          
         </div>
         <div className={style.boxservices}>
           <Image src={Icon3} alt="icon" />
-          امنیت اطلاعات
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
         <div className={style.boxservices}>
           <Image src={Icon2} alt="icon" />
-          سیستم های اطلاعاتی
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
         <Link
           href="/services-integrated-system"
           className={style.activeboxservices}
         >
           <Image src={Icon1} alt="icon" />
-          سیستم های یکپارچه
+          <p className={style.p}>شبکه و زیر ساخت</p>
           <div className={style.orangebar}></div>
         </Link>
         <div className={style.boxservices}>
           <Image src={Icon4} alt="icon" />
-          هوشمند سازی
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
         <div className={style.boxservices}>
           <Image src={Icon5} alt="icon" />
-          تامین تجهیزات
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
         <div className={style.boxservices}>
           <Image src={Icon6} alt="icon" />
-          تحول دیجیتال
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
         <div className={style.boxservices}>
           <Image src={Icon7} alt="icon" />
-          مرکز داده و امداد و پشتیبانی
+          <p className={style.p}>شبکه و زیر ساخت</p>
         </div>
       </div>
     </section>

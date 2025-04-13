@@ -69,8 +69,8 @@
   flex-direction: column;
   position: relative;
   cursor: pointer;
-  color: #515151; 
-  text-decoration: none; 
+  color: #515151;
+  text-decoration: none;
 }
 .activeboxservices::before {
   content: url("../../../public/icons/arrow-square-left.svg");
@@ -84,8 +84,8 @@
 .activeboxservices:hover {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  color: #515151; 
-  text-decoration: none; 
+  color: #515151;
+  text-decoration: none;
 }
 .orangebar {
   position: absolute;
@@ -108,4 +108,7 @@
 .activeboxservices > img {
   filter: invert(9%) sepia(100%) saturate(3000%) hue-rotate(240deg)
     brightness(30%) contrast(500%);
+}
+.p {
+  color: #515151;
 }
