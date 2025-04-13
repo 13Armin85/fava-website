@@ -1,0 +1,53 @@
+.first {
+  background-image: url("../../../../public/images/bgc.svg");
+}
+.accordion-container {
+  width: 780px;
+  height: 400spx;
+  overflow-y: auto;
+  margin: 0 auto;
+  border: none;
+
+  border-radius: 4px;
+}
+.accordion-button {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  font-weight: normal !important;
+  font-style: normal !important;
+  color: #1b3375 !important;
+}
+.accordion-header {
+  direction: rtl;
+  font-size: 18px;
+  font-family: "BYekan";
+  color: #1b3375 !important;
+}
+.accordion-item {
+  border: none;
+  margin-bottom: 1rem !important;
+}
+.h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 68px;
+  color: #848484;
+  padding-top: 68px;
+}
+.accordion-body {
+  direction: rtl;
+  font-family: "BYekan";
+}
+.accordion-button::after {
+  margin-left: auto !important;
+  margin-right: unset !important;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+  float: left;
+  position: absolute;
+  left: 1rem;
+  right: auto !important;
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(0deg);
+}

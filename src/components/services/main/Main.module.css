@@ -1,32 +1,36 @@
-body {
-  font-family: sans-serif;
-  background: #f7f7f7;
-  margin: 0;
-  padding: 20px;
-}
-
 .container {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 0.7fr);
   gap: 20px;
   justify-content: center;
+  align-items: center;
+  font-family: "BYekan";
+  margin: 0;
+  padding: 20px;
+  margin-left: 10%;
+  margin-top: 61px;
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background: #fbfbfb;
+  border-radius: 3px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 280px;
+  width: 496px;
+  height: 195px;
   position: relative;
   transition: 0.3s;
+  margin-bottom: 86px;
+  cursor: pointer;
 }
 
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
-
+.card:last-child {
+  grid-column: 2;
+}
 .icon {
   position: absolute;
   top: -20px;
@@ -43,18 +47,21 @@ body {
 
 .title {
   font-weight: bold;
-  color: #1e1eaa;
+  color: #110d8c;
   margin-bottom: 10px;
+  direction: rtl;
+  margin-top: 25px;
 }
 
 .desc {
-  color: #555;
-  font-size: 14px;
+  color: #848484;
+  font-size: 16px;
+  direction: rtl;
 }
 
 .divider {
   height: 40px;
-  width: 3px;
+  width: 4px;
   background: orange;
   position: absolute;
   right: 0;

@@ -1,70 +1,75 @@
 "use client";
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Image from "next/image";
+import { Navigation, EffectCoverflow } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
-import style from "./Slider.module.css";
-import { EffectCoverflow, Navigation } from "swiper/modules";
+import "swiper/css/effect-coverflow";
+import styles from "./Slider.module.css";
 
-// تصاویر
-import Image1 from "../../../public/images/Group 48095536.png";
-import Image2 from "../../../public/images/Group 48095537.png";
-import Image3 from "../../../public/images/Group 48095539.png";
-import Image4 from "../../../public/images/Group 48095540.png";
-import Image5 from "../../../public/images/Group 48095541.png";
-import Image6 from "../../../public/images/Group 48095542.png";
-import Image7 from "../../../public/images/Group 48095543.png";
+const slides = [
+  {
+    title: "سامانه ارائه و پرداخت الکترونیکی قبوض",
+    image: "/images/Group 48095536.png",
+  },
+  {
+    title: "مدیریت آنلاین قبوض آب و برق",
+    image: "/images/Group 48095537.png",
+  },
+  {
+    title: "سامانه گزارش‌گیری مالی",
+    image: "/images/Group 48095539.png",
+  },
+  {
+    title: "نرم‌افزار مالیاتی سازمانی",
+    image: "/images/Group 48095540.png",
+  },
+  {
+    title: "راهکار هوشمند صدور فاکتور",
+    image: "/images/Group 48095541.png",
+  },
+];
 
-const Slider = () => {
+export default function Slider() {
   return (
-    <section>
-      <h1 className={style.header}>محصولات</h1>
-      <div className={style.first}>
-        <div className={style.wrapper}>
-          <div className={`custom-swiper-button-prev ${style.navButton1}`}>
-            ‹
-          </div>
-
-          <Swiper
-            effect="coverflow"
-            grabCursor={true}
-            centeredSlides={true}
-            slidesPerView={3}
-            spaceBetween={-500}
-            loop={true}
-            coverflowEffect={{
-              rotate: 0,
-              stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: false,
-            }}
-            navigation={{
-              nextEl: ".custom-swiper-button-next",
-              prevEl: ".custom-swiper-button-prev",
-            }}
-            modules={[EffectCoverflow, Navigation]}
-            className={style.swiper}
-          >
-            {[Image1, Image2, Image3, Image4, Image5, Image6, Image7].map(
-              (img, index) => (
-                <SwiperSlide key={index} className={style.swiperslide}>
-                  <div className={style.slideWrapper}>
-                    <Image src={img} alt={`Slide ${index + 1}`} />
-                  </div>
-                </SwiperSlide>
-              )
-            )}
-          </Swiper>
-          <div className={`custom-swiper-button-next ${style.navButton2}`}>
-            ›
-          </div>
-        </div>
+    <div>
+      <h1 className={styles.h1}>محصولات</h1>
+      <div className={styles.wrapper}>
+        <Swiper
+          modules={[Navigation, EffectCoverflow]}
+          navigation
+          centeredSlides
+          slidesPerView={1.5}
+          spaceBetween={30}
+          loop={true}
+          effect="coverflow"
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2.5,
+            slideShadows: false,
+          }}
+          className={styles.swiper}
+          breakpoints={{
+            768: { slidesPerView: 1.5 },
+            1024: { slidesPerView: 2.5 },
+          }}
+        >
+          {slides.map((slide, index) => (
+            <SwiperSlide key={index}>
+              <div className={styles.card}>
+                <img
+                  src={slide.image}
+                  alt={slide.title}
+                  className={styles.image}
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
-    </section>
+    </div>
   );
-};
-
-export default Slider;
+}
